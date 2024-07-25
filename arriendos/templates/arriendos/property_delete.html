@@ -1,0 +1,13 @@
+{% extends "arriendos/base.html" %}
+
+{% block title %}Eliminar Propiedad{% endblock %}
+
+{% block content %}
+<h1>Eliminar Propiedad</h1>
+<p>¿Estás seguro de que quieres eliminar {{ object.nombre }}?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Confirmar</button>
+</form>
+<a href="{% url 'propiedad_list' %}">Cancelar</a>
+{% endblock %}

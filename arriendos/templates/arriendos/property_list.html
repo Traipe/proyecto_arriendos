@@ -1,0 +1,15 @@
+{% extends "arriendos/base.html" %}
+
+{% block title %}Lista de Propiedades{% endblock %}
+
+{% block content %}
+<h1>Lista de Propiedades</h1>
+<a href="{% url 'propiedad_create' %}">Crear Propiedad</a>
+<ul>
+    {% for propiedad in object_list %}
+    <li>
+        <a href="{% url 'propiedad_detail' propiedad.pk %}">{{ propiedad.nombre }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

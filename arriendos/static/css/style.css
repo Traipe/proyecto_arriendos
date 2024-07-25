@@ -1,0 +1,72 @@
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    background-color: #f3d9d9; /* Color palo rosa */
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 10px;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #F8F4E1; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* sombra */
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    color: #F8F4E1; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* sombra */
+}
+
+.mt-5 {
+    color: #74512D;
+}
+
+.btn-outline-secondary {
+    color: #74512D; /* Color del texto */
+    border-color: #74512D; /* Color del borde */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #74512D; /* Color de fondo al pasar el mouse */
+    color: white; /* Color del texto al pasar el mouse */
+    border-color: #74512D; /* Color del borde al pasar el mouse */
+}
+
+.footer-custom {
+    background-color: #543310;
+    color: #F8F4E1;
+}
+
+.btn-social {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F8F4E1;
+    border-color: #F8F4E1;
+}
+.btn-social i {
+    font-size: 20px;
+}
