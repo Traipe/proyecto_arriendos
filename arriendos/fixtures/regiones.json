@@ -1,0 +1,115 @@
+[
+    {
+      "model": "arriendos.Region",
+      "pk": 1,
+      "fields": {
+        "nombre": "Región de Arica y Parinacota"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 2,
+      "fields": {
+        "nombre": "Región de Tarapacá"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 3,
+      "fields": {
+        "nombre": "Región de Antofagasta"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 4,
+      "fields": {
+        "nombre": "Región de Atacama"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 5,
+      "fields": {
+        "nombre": "Región de Coquimbo"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 6,
+      "fields": {
+        "nombre": "Región de Valparaíso"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 7,
+      "fields": {
+        "nombre": "Región Metropolitana de Santiago"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 8,
+      "fields": {
+        "nombre": "Región del Libertador General Bernardo O'Higgins"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 9,
+      "fields": {
+        "nombre": "Región del Maule"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 10,
+      "fields": {
+        "nombre": "Región de Ñuble"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 11,
+      "fields": {
+        "nombre": "Región del Biobío"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 12,
+      "fields": {
+        "nombre": "Región de La Araucanía"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 13,
+      "fields": {
+        "nombre": "Región de Los Ríos"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 14,
+      "fields": {
+        "nombre": "Región de Los Lagos"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 15,
+      "fields": {
+        "nombre": "Región de Aysén del General Carlos Ibáñez del Campo"
+      }
+    },
+    {
+      "model": "arriendos.Region",
+      "pk": 16,
+      "fields": {
+        "nombre": "Región de Magallanes y de la Antártica Chilena"
+      }
+    }
+  ]
+  

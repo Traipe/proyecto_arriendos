@@ -1,0 +1,24 @@
+[
+    {
+      "model": "arriendos.tipoinmueble",
+      "pk": 1,
+      "fields": {
+        "nombre": "Casa"
+      }
+    },
+    {
+      "model": "arriendos.tipoinmueble",
+      "pk": 2,
+      "fields": {
+        "nombre": "Departamento"
+      }
+    },
+    {
+      "model": "arriendos.tipoinmueble",
+      "pk": 3,
+      "fields": {
+        "nombre": "Parcela"
+      }
+    }
+  ]
+  
