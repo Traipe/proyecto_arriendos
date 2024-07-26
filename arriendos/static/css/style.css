@@ -1,32 +1,32 @@
-/* Reset de márgenes y padding */
-body, html {
-    margin: 0;
-    padding: 0;
-}
-
 /* Estilo para el cuerpo de la página */
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
-    background-color: #ffe4e1; /* Color de fondo rosado pastel */
-    color: #000080; /* Color del texto azul oscuro */
+    color: #f4eaf7; 
+    background-color: #81d0f0;
 }
 
+
 /* Estilo para los encabezados */
-h1, h2, h3 {
-    color: #000080; /* Color del texto azul oscuro */
+h1, h2 {
+    color: #446118;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
+h5 {
+    color: #1b1f13;
+   
+}
+
 /* Estilo para los párrafos */
 p {
-    color: #000080; /* Color del texto azul oscuro */
+    color: #1a5341;
 }
 
 /* Estilo para los enlaces */
 a {
-    color: #000080; /* Color de los enlaces azul oscuro */
+    color: #1a5341; 
     text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ ul, ol {
     font-size: 1rem;
     font-weight: 400;
     padding: .5rem 1rem;
-    color: #fff;
+    color: #15987e;
 }
 
 .btn-primary {
@@ -70,8 +70,8 @@ ul, ol {
 
 /* Estilo para el pie de página */
 footer {
-    background-color: #343a40;
-    color: #ffffff;
+    background-color: #edacf0;
+    color: #cbdb8f;
     padding: 20px 0;
 }
 
@@ -95,8 +95,8 @@ form .form-control {
 
 /* Estilo para la navegación */
 .navbar {
-    background-color: #ffffff;
-    border-bottom: 1px solid #dee2e6;
+    background-color: #edacf0;;
+    border-bottom: 1px solid #5edcf5;
     padding: 10px 0;
 }
 
@@ -106,7 +106,7 @@ form .form-control {
 }
 
 .nav-link {
-    color: #000080; /* Color del texto de los enlaces de navegación azul oscuro */
+    color: #072c32; /* Color del texto de los enlaces de navegación azul oscuro */
     margin-right: 10px;
 }
 
