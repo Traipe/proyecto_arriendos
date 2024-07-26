@@ -1,0 +1,115 @@
+/* Reset de márgenes y padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    background-color: #ffe4e1; /* Color de fondo rosado pastel */
+    color: #000080; /* Color del texto azul oscuro */
+}
+
+/* Estilo para los encabezados */
+h1, h2, h3 {
+    color: #000080; /* Color del texto azul oscuro */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos */
+p {
+    color: #000080; /* Color del texto azul oscuro */
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #000080; /* Color de los enlaces azul oscuro */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las listas */
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para los botones */
+.btn {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .5rem 1rem;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+/* Estilo para el formulario de contacto */
+form {
+    margin-top: 20px;
+}
+
+form .form-control {
+    margin-bottom: 15px;
+}
+
+/* Estilo para las alertas */
+.alert {
+    margin-top: 20px;
+}
+
+.alert-heading {
+    margin-bottom: 10px;
+}
+
+/* Estilo para la navegación */
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #000080; /* Color del texto de los enlaces de navegación azul oscuro */
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}

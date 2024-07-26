@@ -1,0 +1,9 @@
+{% extends "arriendos/base.html" %}
+
+{% block title %}Cerrar Sesión{% endblock %}
+
+{% block content %}
+<h1>Cerrar Sesión</h1>
+<p>Has cerrado sesión exitosamente.</p>
+<a href="{% url 'login' %}">Iniciar Sesión de nuevo</a>
+{% endblock %}

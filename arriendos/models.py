@@ -27,7 +27,6 @@ class Usuario(models.Model):
     telefono = models.CharField(max_length=15)
     email = models.EmailField()
     
-    # tipo_usuario con choices y valor por defecto
     TIPO_USUARIO = [
         ('arrendatario', 'Arrendatario'),
         ('arrendador', 'Arrendador'),
@@ -46,16 +45,15 @@ class Propiedad(models.Model):
     habitaciones = models.IntegerField()
     banos = models.IntegerField()
     direccion = models.CharField(max_length=200)
-    comuna = models.ForeignKey('Comuna', on_delete=models.CASCADE)
+    comuna = models.ForeignKey(Comuna, on_delete=models.CASCADE)
     
-    # Añadir campo tipo_inmueble con choices y valor por defecto
     TIPO_INMUEBLE = [
         ('casa', 'Casa'),
         ('departamento', 'Departamento'),
         ('parcela', 'Parcela'),
     ]
     tipo_inmueble = models.CharField(max_length=12, choices=TIPO_INMUEBLE, default='casa')
-    precio_arriendo = models.FloatField(default=0.0) 
+    precio_arriendo = models.FloatField(default=0.0)
     arrendador = models.ForeignKey(Usuario, on_delete=models.CASCADE, default=1)
 
     def __str__(self):
