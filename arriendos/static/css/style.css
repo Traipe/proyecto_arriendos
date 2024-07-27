@@ -2,10 +2,48 @@
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
-    color: #f4eaf7; 
-    background-color: #81d0f0;
+    color: #166b7a; 
+    background-color: #c9eee6;
 }
 
+/* Estilo para la navegación */
+.navbar {
+    border-bottom: 1px solid #5edcf5;
+    padding: 10px 0;
+    background-color: #EEFFDA !important;
+
+}
+
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+
+.nav-link {
+    color: #166b7a; /* Color del texto de los enlaces de navegación azul oscuro */
+    margin-right: 10px;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+
+/*Carrusel*/
+
+.carousel-caption {
+    background-color: #c9eee6;
+    color: #166b7a;
+    padding: 5px; 
+}
+
+/*estilo cards*/
+
+.card-body {
+    background-color: #EEFFDA; 
+}
 
 /* Estilo para los encabezados */
 h1, h2 {
@@ -70,8 +108,8 @@ ul, ol {
 
 /* Estilo para el pie de página */
 footer {
-    background-color: #edacf0;
-    color: #cbdb8f;
+    background-color: #166b7a;
+    color: #EEFFDA; 
     padding: 20px 0;
 }
 
@@ -93,23 +131,3 @@ form .form-control {
     margin-bottom: 10px;
 }
 
-/* Estilo para la navegación */
-.navbar {
-    background-color: #edacf0;;
-    border-bottom: 1px solid #5edcf5;
-    padding: 10px 0;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.nav-link {
-    color: #072c32; /* Color del texto de los enlaces de navegación azul oscuro */
-    margin-right: 10px;
-}
-
-.nav-link:hover {
-    color: #007bff;
-}

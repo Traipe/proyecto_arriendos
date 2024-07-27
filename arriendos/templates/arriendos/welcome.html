@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Bienvenido {{ user.get_username }} al mundo del Flan</h4>
+        <p>En OnlyFlans, llevamos la creación de postres a un nivel superior con nuestra selección gourmet.</p>
+        <hr>
+        <p class="mb-0">Descubre nuestras opciones PREMIUM y déjate seducir por los sabores más exquisitos y únicos.</p>
+    </div>
+
+    <h2 class="mt-5">Nuestros productos gourmet</h2>
+    <p class="lead">Cada flan es una obra maestra, elaborado con ingredientes exclusivos y técnicas refinadas para ofrecer una experiencia culinaria inigualable.</p>
+    <div class="row">
+        {% for flan in flanes %}
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{ flan.image_url }}" class="card-img-top" alt="{{ flan.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ flan.name }}</h5>
+                    <p class="card-text">{{ flan.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Botón para cerrar sesión -->
+    <a href="{% url 'logout' %}" class="btn btn-danger">Cerrar sesión</a>
+</div>
+{% endblock %}

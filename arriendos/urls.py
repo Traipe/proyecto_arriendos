@@ -55,6 +55,7 @@ urlpatterns = [
     path('propiedades/<int:pk>/editar/', views.PropiedadUpdateView.as_view(), name='propiedad_update'),
     path('propiedades/<int:pk>/eliminar/', views.PropiedadDeleteView.as_view(), name='propiedad_delete'),
     path('profile/', views.ProfileView.as_view(), name='profile'),
+    path('reset_password/', auth_views.PasswordResetView.as_view(), name='password_reset'),
 ]
 
 

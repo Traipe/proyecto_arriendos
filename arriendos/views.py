@@ -2,6 +2,7 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth import views as auth_views
+from django.contrib.auth.views import PasswordResetView
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
@@ -76,3 +77,7 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'arriendos/register.html', {'form': form})
+
+
+class PasswordResetView(PasswordResetView):
+    template_name = 'password_reset_form.html'
