@@ -64,9 +64,6 @@ class PropiedadDeleteView(DeleteView):
 class ProfileView(LoginRequiredMixin, TemplateView):
     template_name = 'arriendos/profile.html'
 
-class RegisterView(TemplateView):
-    template_name = 'arriendos/register.html'
-
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
@@ -78,6 +75,13 @@ def register(request):
         form = UserCreationForm()
     return render(request, 'arriendos/register.html', {'form': form})
 
-
 class PasswordResetView(PasswordResetView):
     template_name = 'password_reset_form.html'
+
+
+def welcome(request):
+    return render(request, 'welcome.html')
+
+
+def login_view(request):
+    return render(request, 'login.html')

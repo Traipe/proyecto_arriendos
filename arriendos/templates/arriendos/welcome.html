@@ -3,7 +3,7 @@
 {% block content %}
 <div class="container mt-5 mb-5">
     <div class="alert alert-success" role="alert">
-        <h4 class="alert-heading">Bienvenido {{ user.get_username }} al mundo del Flan</h4>
+        <h4 class="alert-heading">Bienvenido, {{ user.get_username }}!</h4>
         <p>En OnlyFlans, llevamos la creación de postres a un nivel superior con nuestra selección gourmet.</p>
         <hr>
         <p class="mb-0">Descubre nuestras opciones PREMIUM y déjate seducir por los sabores más exquisitos y únicos.</p>
@@ -25,7 +25,6 @@
         {% endfor %}
     </div>
 
-    <!-- Botón para cerrar sesión -->
     <a href="{% url 'logout' %}" class="btn btn-danger">Cerrar sesión</a>
 </div>
 {% endblock %}

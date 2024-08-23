@@ -38,12 +38,12 @@ urlpatterns = [
 from django.urls import path
 from django.contrib.auth import views as auth_views
 from . import views
-
 urlpatterns = [
+    path('', views.HomeView.as_view(), name='home'),
+    path('profile/', views.ProfileView.as_view(), name='profile'),
     path('login/', auth_views.LoginView.as_view(template_name='arriendos/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='arriendos/logout.html'), name='logout'),
     path('register/', views.register, name='register'),
-    path('', views.HomeView.as_view(), name='home'),
     path('usuarios/', views.UsuarioListView.as_view(), name='usuario_list'),
     path('usuarios/<int:pk>/', views.UsuarioDetailView.as_view(), name='usuario_detail'),
     path('usuarios/nuevo/', views.UsuarioCreateView.as_view(), name='usuario_create'),
@@ -54,8 +54,6 @@ urlpatterns = [
     path('propiedades/nueva/', views.PropiedadCreateView.as_view(), name='propiedad_create'),
     path('propiedades/<int:pk>/editar/', views.PropiedadUpdateView.as_view(), name='propiedad_update'),
     path('propiedades/<int:pk>/eliminar/', views.PropiedadDeleteView.as_view(), name='propiedad_delete'),
-    path('profile/', views.ProfileView.as_view(), name='profile'),
-    path('reset_password/', auth_views.PasswordResetView.as_view(), name='password_reset'),
+    path('reset_password/', auth_views.PasswordResetView.as_view(template_name='arriendos/password_reset_form.html'), name='password_reset'),
+    path('welcome/', views.welcome, name='welcome'),
 ]
-
-
