@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+    {% if messages %}
+    <div class="container mt-3">
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+
     <div>{% include 'arriendos/navbar.html' %}</div>
     <div>{% include 'arriendos/header.html' %}</div>
     <div class="container">{% block content %}{% endblock %}</div>

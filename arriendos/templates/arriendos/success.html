@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Exitoso</title>
+    <link rel="stylesheet" href="{% static 'arriendos/css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Te has registrado de forma exitosa!</h1>
+        <p>Comienza a añadir o modificar tus propiedades.</p>
+        <a href="{% url 'login' %}" class="btn">Iniciar Sesión</a>
+    </div>
+</body>
+</html>
+{% endblock %}

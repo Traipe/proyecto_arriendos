@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-
 {% block content %}
 <div class="container mt-5 mb-5">
     <h2 class="text-center">Registro</h2>
@@ -12,7 +11,7 @@
                     </div>
                 {% endfor %}
             {% endif %}
-            <form method="post" action="{% url 'register' %}">
+            <form method="post" action="{% url 'success' %}">
                 {% csrf_token %}
                 <div class="mb-3">
                     {{ form.username.label_tag }}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h1 class="mt-5">Bienvenide a Leaf-Home</h1>
+    <p class="lead">Aquí encontrarás el espacio de tus sueños. Lugares alejados de la ciudad, o dentro de ella en comunidad de espacios seguros. ¡Ven y visítanos!</p>
+    
+    <form method="get" class="mb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="comuna">Comuna</label>
+                <select id="comuna" name="comuna" class="form-control">
+                    <option value="">Todas las comunas</option>
+                    {% for comuna in comunas %}
+                        <option value="{{ comuna.id }}" {% if comuna.id|stringformat:"s" == comuna_seleccionada %}selected{% endif %}>{{ comuna.nombre }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="region">Región</label>
+                <select id="region" name="region" class="form-control">
+                    <option value="">Todas las regiones</option>
+                    {% for region in regiones %}
+                        <option value="{{ region.id }}" {% if region.id|stringformat:"s" == region_seleccionada %}selected{% endif %}>{{ region.nombre }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Filtrar</button>
+    </form>
+
+    <div class="row">
+        {% for inmueble in inmuebles %}
+        {% if inmueble.id %}
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="{% static inmueble.imagen %}" class="card-img-top" alt="{{ inmueble.titulo }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ inmueble.titulo }}</h5>
+                    <p class="card-text">{{ inmueble.descripcion }}</p>
+                    <a href="{% url 'detalle_card' card_id=inmueble.id %}" class="btn btn-primary">Más Información</a>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <!-- Puedes agregar un mensaje o manejar el caso en el que el id no esté presente -->
+        <p>Datos incompletos para el inmueble.</p>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

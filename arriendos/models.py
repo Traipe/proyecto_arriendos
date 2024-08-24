@@ -54,7 +54,7 @@ class Propiedad(models.Model):
     ]
     tipo_inmueble = models.CharField(max_length=12, choices=TIPO_INMUEBLE, default='casa')
     precio_arriendo = models.FloatField(default=0.0)
-    arrendador = models.ForeignKey(Usuario, on_delete=models.CASCADE, default=1)
+    arrendador = models.ForeignKey(Usuario, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.nombre
